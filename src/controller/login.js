@@ -45,7 +45,7 @@ export const logout = (req, res) => {
 
     req.session.destroy((err) => {
 
-        if (!err) res.send(`Logout de  ${username}`);
+        if (!err) res.send(`Hasta luego ${username}`);
         else res.send({ status: 'Error de Logout', body: err });
 
     });
